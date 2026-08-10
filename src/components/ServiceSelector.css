@@ -1,0 +1,83 @@
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 260px;
+  overflow-y: auto;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  transition: 0.2s;
+}
+
+.service-item-active {
+  background: rgba(106, 170, 100, 0.08);
+}
+
+.service-item-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  cursor: pointer;
+  min-width: 0;
+}
+
+.service-item-main input[type='checkbox'] {
+  flex-shrink: 0;
+}
+
+.service-thumb {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.service-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.service-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--dark-teal);
+}
+
+.service-description {
+  font-size: 0.75rem;
+  color: #888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.service-price-input {
+  width: 90px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  flex-shrink: 0;
+}
+
+.service-price-input:focus {
+  border-color: var(--primary-green);
+}
+
+.service-price-input:disabled {
+  background: var(--border-softer);
+  cursor: not-allowed;
+}

@@ -1,0 +1,33 @@
+export const COLUMNS = [
+  'id',
+  'created_at',
+  'first_name',
+  'last_name',
+  'phone_number',
+  'email',
+  'latitude',
+  'longitude',
+  'role',
+  'cedula',
+  'service_prices',
+  'description',
+  'avatar',
+  'validated',
+  'professional_profile',
+  'direction_details',
+  'idMembresia',
+  'fechaMembresiaInicio',
+  'fechaMembresiaFin',
+]
+
+export const EMPTY_FORM = {
+  first_name: '',
+  last_name: '',
+  email: '',
+  phone_number: '',
+  cedula: '',
+  description: '',
+  latitude: null,
+  longitude: null,
+  service_prices: {},
+}

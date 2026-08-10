@@ -1,0 +1,122 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f7f4 0%, #ffffff 50%, #e0f2f1 100%);
+  padding: 24px;
+}
+
+.login-shape {
+  position: absolute;
+  filter: blur(80px);
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.login-shape-1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(106, 170, 100, 0.2);
+  top: -100px;
+  left: -100px;
+}
+
+.login-shape-2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(27, 79, 92, 0.15);
+  bottom: -50px;
+  right: -50px;
+}
+
+.login-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 15px 35px rgba(27, 79, 92, 0.1);
+  text-align: center;
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.login-brand span {
+  font-weight: 600;
+  color: var(--dark-teal);
+}
+
+.login-card h1 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.login-subtitle {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+.login-field {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.login-field label {
+  font-size: 0.85rem;
+  color: var(--dark-teal);
+  font-weight: 600;
+}
+
+.login-field input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid rgba(106, 170, 100, 0.3);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.8);
+  outline: none;
+}
+
+.login-field input:focus {
+  border-color: var(--primary-green);
+}
+
+.login-error {
+  background: rgba(229, 115, 115, 0.12);
+  color: var(--danger-red);
+  font-size: 0.85rem;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.login-submit {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to right, var(--dark-teal), var(--primary-green));
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.login-submit:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(27, 79, 92, 0.3);
+}

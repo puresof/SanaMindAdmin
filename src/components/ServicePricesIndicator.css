@@ -1,0 +1,35 @@
+.service-count-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: rgba(27, 79, 92, 0.08);
+  color: var(--dark-teal);
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.service-count-badge:hover {
+  background: rgba(27, 79, 92, 0.18);
+}
+
+.service-count-empty {
+  background: var(--border-softer);
+  color: #888;
+  cursor: default;
+}
+
+.service-indicator-overlay {
+  position: fixed;
+  z-index: 200;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  min-width: 220px;
+  max-width: 300px;
+}

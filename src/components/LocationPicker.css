@@ -1,0 +1,18 @@
+.location-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.location-picker-map {
+  height: 220px;
+  width: 100%;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.location-picker-hint {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 0;
+}

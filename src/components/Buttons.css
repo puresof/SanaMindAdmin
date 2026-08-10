@@ -1,0 +1,59 @@
+.btn-new,
+.btn-outline,
+.btn-refresh {
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+  font-size: 0.95rem;
+}
+
+.btn-new {
+  background: var(--primary-green);
+  color: white;
+  border: none;
+}
+
+.btn-new:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(106, 170, 100, 0.4);
+}
+
+.btn-outline {
+  background: rgba(27, 79, 92, 0.1);
+  color: var(--dark-teal);
+  border: 1.5px solid var(--dark-teal);
+}
+
+.btn-outline:hover {
+  background: var(--dark-teal);
+  color: white;
+}
+
+.btn-refresh {
+  background: white;
+  color: var(--dark-teal);
+  border: 1.5px solid #ddd;
+}
+
+.btn-refresh:hover {
+  border-color: var(--dark-teal);
+  background: #f8f9fa;
+}
+
+.spinning {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
