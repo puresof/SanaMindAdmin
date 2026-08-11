@@ -46,7 +46,7 @@ function Login() {
           <span>SanaMind</span>
         </div>
 
-        <h1>Acceso Admin</h1>
+        <h1>Acceso panel de administración</h1>
         <p className="login-subtitle">Gestiona terapeutas y pacientes.</p>
 
         <form onSubmit={handleSubmit}>
