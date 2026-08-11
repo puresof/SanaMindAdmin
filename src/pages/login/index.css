@@ -95,6 +95,31 @@
   border-color: var(--primary-green);
 }
 
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  padding-right: 42px;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  color: #999;
+}
+
+.password-toggle:hover {
+  color: var(--primary-green);
+}
+
 .login-error {
   background: rgba(229, 115, 115, 0.12);
   color: var(--danger-red);
